@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<script src="createSnakeboard.js"></script> 
+	<script src="storescore.js"></script> 
+	<script src="disablezoom.js"></script> 
+	<script src="Score.js"></script> 
+	<link rel="stylesheet" href="styles.css">
+	<audio id = 'odio' src="A.mp3" autoplay="true" loop='true' display='none'></audio>
+	<audio id = 'power' src="power.wav"display='none'></audio>
+	<title>Snake Game</title>
+	<script src="cov.js"></script> 
+</head>
+
+<body>
+	<div id="score">0</div>
+	<canvas id="snakeboard" width="1100em" height="750em"></canvas>
+
+
+	<canvas id="Highscore"></canvas>
+	<div id = 'HighscoreText'>Top 9 Scores</div>
+	<div id = 'highscores'>
+		<div class = 'NAME' id = 'N1'></div><div class = 'SCORE' id = 'S1'></div>	<br>
+		<div class = 'NAME' id = 'N2'></div><div class = 'SCORE' id = 'S2'></div>	<br>
+		<div class = 'NAME' id = 'N3'></div><div class = 'SCORE' id = 'S3'></div>	<br>
+		<div class = 'NAME' id = 'N4'></div><div class = 'SCORE' id = 'S4'></div>	<br>
+		<div class = 'NAME' id = 'N5'></div><div class = 'SCORE' id = 'S5'></div>	<br>
+		<div class = 'NAME' id = 'N6'></div><div class = 'SCORE' id = 'S6'></div>	<br>
+		<div class = 'NAME' id = 'N7'></div><div class = 'SCORE' id = 'S7'></div>	<br>
+		<div class = 'NAME' id = 'N8'></div><div class = 'SCORE' id = 'S8'></div>	<br>
+		<div class = 'NAME' id = 'N9'></div><div class = 'SCORE' id = 'S9'></div>	<br>
+	</div>
+
+
+	<div class="modal fade" id="modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"></button>
+					<h4 class="modal-title">You're Dead</h4>
+				</div>
+				<div class="modal-body">
+					<strong><p>Wear a mask if you dont want to die in real life too</p></strong>
+					<p id = 'dark'></p><br>
+					<p id = 'scoredisp'></p>
+					<p id = 'Points'></p><br>
+					<form id = 'form'>
+						Username<input type="text" placeholder="Enter Username" id="uname" required>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" id='modalButt' onClick="reload()">Restart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</body>
+<script src="snek.js"></script> 
+
+</html>
